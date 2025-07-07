@@ -1,64 +1,49 @@
-🤖 Simple Chatbot – Powered by GPT & Gradio
-A minimal, AI-powered chatbot that responds like Dilina Chathuraka Perera, using OpenAI’s GPT models. Built with a simple and clean Gradio interface for easy interaction.
+# simple-chatbot
 
-✨ Features
-📄 Understands you from your profile PDF and summary
+A simple AI-powered chatbot that answers questions as Dilina Chathuraka Perera, using OpenAI's GPT models and Gradio for the web interface.
 
-🤖 Uses OpenAI’s GPT-4o-mini for intelligent, personalized answers
+## Features
 
-🧠 Loads and remembers context from your documents
+- Answers questions based on Dilina's profile and summary.
+- Loads context from a PDF profile and a summary text file.
+- Uses OpenAI's GPT-4o-mini model for responses.
+- Gradio-based chat interface for easy interaction.
 
-💬 Gradio-based web UI for chatting in the browser
+## Setup
 
-🚀 Quick Start
-1. Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/your-username/simple-chatbot.git
-cd simple-chatbot
-2. Install Dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-💡 Make sure you have Python 3.8+ installed.
+1. **Clone the repository** and navigate to the project directory.
 
-3. Add Your OpenAI API Key
-Create a .env file (or use the one provided) and add:
+2. **Install dependencies**:
+   ```sh
+   pip install -r requirments.txt
+   ```
 
-env
-Copy
-Edit
-OPENAI_API_KEY=your-api-key-here
-4. Add Your Personal Files
-Make sure these files exist in the me/ folder:
+3. **Add your OpenAI API key** to the `.env` file (already present in this repo).
 
-css
-Copy
-Edit
-me/
-├── Profile.pdf
-└── summary.txt
-🧪 Run the Chatbot
-Start the chatbot with:
+4. **Ensure your profile PDF and summary are in the `me/` directory**:
+   - `me/Profile.pdf`
+   - `me/summary.txt`
 
-bash
-Copy
-Edit
+## Usage
+
+Run the chatbot locally:
+```sh
 python app.py
-It will open a local Gradio web interface in your default browser.
+```
+This will launch a Gradio web interface in your browser.
 
-📁 Project Structure
-bash
-Copy
-Edit
-simple-chatbot/
-├── app.py                  # Main app file
-├── .env                   # API key config
-├── requirements.txt       # Python dependencies
-├── me/                    # Personal context files
+## Project Structure
+
+```
+.
+├── app.py
+├── .env
+├── requirments.txt
+├── me/
 │   ├── Profile.pdf
 │   └── summary.txt
-📝 License
-This project is for educational and personal use only.
+```
+
+## License
+
+This project is for educational and personal use.
