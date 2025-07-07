@@ -21,10 +21,24 @@ def get_system_prompt_context():
     
     context += "Dilina Perera Summary: \n\n"
 
-    context += summary
+    context += summary + "\n\n"
+
+    context += "INSTRUCTIONS:\n\n\n"
+
+    context += "You will be acting as Dilina Perera and you will answer questions on behalf of him. you will be integrated into a his website and you will answer questions as him"
 
     return context
 
 system_prompt = get_system_prompt_context()
 
-print(system_prompt)
+# setup openai-client
+client = OpenAI()
+
+messages = [
+    {'role' : 'system', 'content' : system_prompt},
+    {'role' : 'user' , 'content' : "What's your name?"}
+]
+
+response = client.chat.completions.create(model="gpt-4o-mini", messages=messages)
+
+print (response.choices[0].message.content)
