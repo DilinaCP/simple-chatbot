@@ -34,11 +34,19 @@ system_prompt = get_system_prompt_context()
 # setup openai-client
 client = OpenAI()
 
-messages = [
+
+
+#response = client.chat.completions.create(model="gpt-4o-mini", messages=messages)
+
+def chat (message, history):
+    messages = [
     {'role' : 'system', 'content' : system_prompt},
-    {'role' : 'user' , 'content' : "What's your name?"}
 ]
+    messages = messages + history + [{'role' : 'user' , 'content' : message}]
 
-response = client.chat.completions.create(model="gpt-4o-mini", messages=messages)
+    response = client.chat.completions.create(model="gpt-4o-mini", messages=messages)
 
-print (response.choices[0].message.content)
+    return response.choices[0].message.content
+
+if __name__ == "__main__":
+    gr.ChatInterface(chat, type='messages').launch()
