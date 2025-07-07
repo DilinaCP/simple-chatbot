@@ -1,0 +1,9 @@
+Dilina Chathuraka Perera is a passionate and driven computer science undergraduate at the University of Westminster, currently studying at the Informatics Institute of Technology in Sri Lanka. With a strong foundation in programming, algorithms, databases, and machine learning, Dilina is focused on becoming a skilled software developer and data scientist.
+
+He has demonstrated hands-on proficiency through several full-stack and AI-integrated projects, such as CuraSync, a healthcare management platform that utilizes Next.js, Tailwind CSS, Socket.IO, and AI-based medical report visualizations. He also built Petalpad, a secure note-taking app, and a Cinema Management System using Java, showcasing both front-end finesse and strong backend logic.
+
+Dilina is actively expanding his skills through certifications and online courses in Java, Spring Boot, Angular, web development, and advanced machine learning. He combines his technical aptitude with a proactive learning mindset and a collaborative spirit, which is also reflected in his leadership role at AIESEC IIT, where he leads teams in socially impactful initiatives.
+
+In the near future, Dilina aims to secure an internship in the IT or data science sector, where he can apply his growing expertise in real-world environments, learn from industry professionals, and contribute meaningfully to innovative projects. His long-term goal is to become a solution-oriented developer who leverages artificial intelligence and full-stack technologies to build scalable, impactful applications that solve real-world problems.
+
+Dilina’s analytical mindset, adaptability, and strong work ethic make him an ideal candidate for technical roles that demand creativity, responsibility, and continuous growth. As he continues his journey, Dilina is committed to evolving as a developer who not only codes efficiently but also thinks critically and builds with purpose.
